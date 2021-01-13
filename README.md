@@ -7,7 +7,7 @@ For build need as, gcc, ld. For run need qemu.
 
 Build: **make**
 
-Run: **make run**
+Build and run: **make run**
 
 Who help me (what I read/use):
 
