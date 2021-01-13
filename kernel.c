@@ -50,7 +50,7 @@ uint8_t terminal_color;
 uint16_t *terminal_buffer;
 
 
-void terminal_initialize(void) {
+void terminal_initialize() {
     terminal_row = 0;
     terminal_column = 0;
     terminal_color = vga_entry_color(VGA_COLOR_LIGHT_GREY, VGA_COLOR_BLACK);
@@ -104,7 +104,7 @@ void terminal_writestring(const char* data) {
 }
 
 
-void kernel_main(void) {
+void kernel_main() {
     terminal_initialize();
     terminal_setcolor(VGA_COLOR_WHITE);
     terminal_writestring("SimpleOS\n");
